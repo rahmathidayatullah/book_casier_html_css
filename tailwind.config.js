@@ -25,6 +25,7 @@ module.exports = {
         "soft-purple": "#B6B2FF",
         "neutral-dark": "#000000",
         "gray-culture": "#B5B5B5",
+        "orange-pumkin": "#FF8A00",
       },
       borderColor: {
         "green-mantis": "#00D293",
@@ -33,6 +34,7 @@ module.exports = {
         "soft-purple": "#B6B2FF",
         "neutral-dark": "#000000",
         "gray-culture": "#B5B5B5",
+        "orange-pumkin": "#FF8A00",
       },
       textColor: {
         "green-mantis": "#00D293",
@@ -41,6 +43,7 @@ module.exports = {
         "soft-purple": "#B6B2FF",
         "neutral-dark": "#000000",
         "gray-culture": "#B5B5B5",
+        "orange-pumkin": "#FF8A00",
       },
       fontFamily: {
         poppins: "Poppins",
