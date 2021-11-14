@@ -60,6 +60,7 @@ module.exports = {
   variants: {
     extend: {
       textDecoration: ["focus-visible"],
+      fontWeight: ["hover", "focus"],
     },
   },
   plugins: [],
