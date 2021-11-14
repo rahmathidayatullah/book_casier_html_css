@@ -6,9 +6,13 @@ module.exports = {
       maxWidth: {
         1440: "1440px",
         432: "432px",
+        446: "446px",
       },
       width: {
+        1440: "1440px",
+        446: "446px",
         432: "432px",
+        76: "76px",
       },
       fontSize: {
         39: "39px",
@@ -46,11 +50,14 @@ module.exports = {
       },
       boxShadow: {
         "1xl": "0px 0px 15px rgba(0, 0, 0, 0.07)",
+        "2xl": "-4px 0px 15px rgba(0, 0, 0, 0.08)",
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      textDecoration: ["focus-visible"],
+    },
   },
   plugins: [],
 };
