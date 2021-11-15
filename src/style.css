@@ -13,6 +13,12 @@
   .items-list {
     @apply pb-1.5 font-normal border-b-4 border-transparent hover:border-violet-purple hover:text-black hover:font-bold duration-300 cursor-pointer text-gray-culture;
   }
+  .btn_circle{
+    @apply rounded-full bg-violet-purple flex items-center justify-center text-white
+  }
+  .card{
+    @apply col-span-1 px-3 py-6 flex flex-col shadow-1xl rounded-lg cursor-pointer relative overflow-hidden
+  }
 }
 
 .hover-content{

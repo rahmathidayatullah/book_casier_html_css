@@ -45,6 +45,15 @@ module.exports = {
         "gray-culture": "#B5B5B5",
         "orange-pumkin": "#FF8A00",
       },
+      placeholderColor: {
+        "green-mantis": "#00D293",
+        "red-dragon": "#FF0000",
+        "violet-purple": "#6C63FF",
+        "soft-purple": "#B6B2FF",
+        "neutral-dark": "#000000",
+        "gray-culture": "#B5B5B5",
+        "orange-pumkin": "#FF8A00",
+      },
       fontFamily: {
         poppins: "Poppins",
       },
