@@ -5,14 +5,12 @@ module.exports = {
     extend: {
       maxWidth: {
         1440: "1440px",
-        432: "432px",
-        446: "446px",
       },
       width: {
         1440: "1440px",
-        446: "446px",
-        432: "432px",
         76: "76px",
+        710: "710px",
+        "89-vw": "89vw",
       },
       fontSize: {
         39: "39px",

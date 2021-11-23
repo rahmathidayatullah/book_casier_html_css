@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=425px, initial-scale=1.0" />
   <link href="./src/style.css" rel="stylesheet">
   <link href="./src/tailwind.css" rel="stylesheet">
-  <title>Dashboard</title>
+  <title>Empty View List Product</title>
 </head>
 
 <body class="font-poppins">
-  <div class="m-auto relative h-screen">
+  <div class="m-auto relative h-screen overflow-scroll xl:overflow-hidden">
     <!-- sidebar -->
     <div class="fixed left-0 h-screen w-76 shadow-2xl px-7 py-9">
+
+
       <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg"
         class="text-gray-culture hover:text-violet-purple duration-300 cursor-pointer">
         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -32,7 +34,7 @@
         </li>
         <li class="mt-10">
           <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-            class="text-gray-culture hover:text-violet-purple duration-300 cursor-pointer">
+            class="text-violet-purple duration-300 cursor-pointer">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M5.33341 16.6666H14.6667C14.9762 16.6666 15.2729 16.7896 15.4917 17.0084C15.7105 17.2271 15.8334 17.5239 15.8334 17.8333C15.8334 18.1427 15.7105 18.4395 15.4917 18.6583C15.2729 18.8771 14.9762 19 14.6667 19H4.16675C3.85733 19 3.56058 18.8771 3.34179 18.6583C3.123 18.4395 3.00008 18.1427 3.00008 17.8333V2.66665H1.83341C1.524 2.66665 1.22725 2.54373 1.00846 2.32494C0.789665 2.10615 0.666748 1.8094 0.666748 1.49998C0.666748 1.19056 0.789665 0.893814 1.00846 0.675022C1.22725 0.456229 1.524 0.333313 1.83341 0.333313H4.16675C4.47617 0.333313 4.77291 0.456229 4.99171 0.675022C5.2105 0.893814 5.33341 1.19056 5.33341 1.49998V12H15.5709L17.0001 6.16665V3.83448C18.3359 3.83448 19.3334 4.87748 19.3334 6.16665C19.3334 6.33698 19.3136 6.50615 19.2751 6.67298L17.9322 12.5063C17.6872 13.5738 16.7049 14.3333 15.5709 14.3333H5.41858L5.33341 14.3321V16.6666ZM4.75008 23.6667C4.28595 23.6667 3.84083 23.4823 3.51264 23.1541C3.18446 22.8259 3.00008 22.3808 3.00008 21.9166C3.00008 21.4525 3.18446 21.0074 3.51264 20.6792C3.84083 20.351 4.28595 20.1666 4.75008 20.1666C5.21421 20.1666 5.65933 20.351 5.98752 20.6792C6.31571 21.0074 6.50008 21.4525 6.50008 21.9166C6.50008 22.3808 6.31571 22.8259 5.98752 23.1541C5.65933 23.4823 5.21421 23.6667 4.75008 23.6667V23.6667ZM15.2501 23.6667C14.786 23.6667 14.3408 23.4823 14.0126 23.1541C13.6845 22.8259 13.5001 22.3808 13.5001 21.9166C13.5001 21.4525 13.6845 21.0074 14.0126 20.6792C14.3408 20.351 14.786 20.1666 15.2501 20.1666C15.7142 20.1666 16.1593 20.351 16.4875 20.6792C16.8157 21.0074 17.0001 21.4525 17.0001 21.9166C17.0001 22.3808 16.8157 22.8259 16.4875 23.1541C16.1593 23.4823 15.7142 23.6667 15.2501 23.6667ZM13.5001 3.83331C13.8095 3.83331 14.1062 3.95623 14.325 4.17502C14.5438 4.39382 14.6667 4.69056 14.6667 4.99998C14.6667 5.3094 14.5438 5.60615 14.325 5.82494C14.1062 6.04373 13.8095 6.16665 13.5001 6.16665H8.83341C8.524 6.16665 8.22725 6.04373 8.00846 5.82494C7.78966 5.60615 7.66675 5.3094 7.66675 4.99998C7.66675 4.69056 7.78966 4.39382 8.00846 4.17502C8.22725 3.95623 8.524 3.83331 8.83341 3.83331H13.5001Z"
               fill="currentColor" />
@@ -96,72 +98,153 @@
       </svg>
 
     </div>
-    <div class="pl-24 pr-9 sm:pl-32 py-9">
+    <div class="pl-24 sm:pl-32">
       <!-- content -->
-      <p class="text-xl">Dashboard</p>
+      <div class="grid grid-cols-3">
+        <div class="col-span-3 xl:col-span-2 pr-4 sm:pr-9 py-9 border-r overflow-scroll h-auto xl:h-screen">
+          <!-- header -->
+          <ul class="flex max-w-full overflow-scroll pb-4">
+            <li>
+              <a class="items-list">
+                All
+              </a>
+            </li>
+            <li class="ml-6">
+              <a class="items-list">
+                Business & Economics
+              </a>
+            </li>
+            <li class="ml-6">
+              <a class="items-list">
+                Art & Design
+              </a>
+            </li>
+            <li class="ml-6">
+              <a class="items-list">
+                Agriculture
+              </a>
+            </li>
+          </ul>
+          <!-- saerch -->
+          <div class="relative mt-8 group text-gray-culture focus-within:text-violet-purple duration-300">
+            <input type="text" placeholder="Search book..." class="input-field">
+            <!-- icon search -->
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="absolute right-4 top-1/2 transform -translate-y-1/2">
+              <path
+                d="M9.16666 16.5C10.7937 16.4997 12.3739 15.955 13.6556 14.9527L17.6852 18.9823L18.9814 17.6862L14.9517 13.6565C15.9546 12.3747 16.4996 10.7942 16.5 9.16668C16.5 5.12326 13.2101 1.83334 9.16666 1.83334C5.12325 1.83334 1.83333 5.12326 1.83333 9.16668C1.83333 13.2101 5.12325 16.5 9.16666 16.5ZM9.16666 3.66668C12.1999 3.66668 14.6667 6.13343 14.6667 9.16668C14.6667 12.1999 12.1999 14.6667 9.16666 14.6667C6.13341 14.6667 3.66666 12.1999 3.66666 9.16668C3.66666 6.13343 6.13341 3.66668 9.16666 3.66668Z"
+                fill="currentColor" />
+              <path
+                d="M10.461 7.87049C10.8084 8.21882 11 8.67899 11 9.16665H12.8333C12.8342 8.68488 12.7395 8.20772 12.5547 7.76277C12.37 7.31781 12.0989 6.91388 11.7572 6.57432C10.3693 5.18832 7.96309 5.18832 6.57617 6.57432L7.87051 7.87232C8.56717 7.17749 9.76801 7.17932 10.461 7.87049Z"
+                fill="currentColor" />
+            </svg>
 
-      <!-- statistik -->
-      <div class="w-full">
-        <div class="grid grid-cols-7 gap-4 mt-4">
-          <div class="col-span-7 xl:col-span-4 h-72 shadow-1xl rounded-lg"></div>
-          <div class="col-span-7 xl:col-span-3 h-72 shadow-1xl rounded-lg"></div>
+          </div>
+          <!-- list product -->
+          <div class="grid grid-cols-6 gap-8 mt-5 p-2">
+            <!-- start card -->
+            <div class="card col-span-6 md:col-span-3 lg:col-span-2">
+              <img class="w-1/2 mx-auto" src="./src/img/product/product1.png" alt="product1">
+              <hr class="bg-gray-culture my-6" />
+              <p class="text-gray-culture font-medium text-sm">Stock : 90</p>
+              <p
+                class="text-black font-bold text-base whitespace-nowrap w-20 2xl:w-48 overflow-hidden overflow-ellipsis">
+                Faktor
+                Lattes Lattes Lattes</p>
+              <p class="text-green-mantis text-xs my-3">Published at <span
+                  class="text-white bg-green-mantis rounded-lg p-2 ml-3">02/07/2021</span> </p>
+              <div class="mt-6 flex items-center justify-between">
+                <p
+                  class="text-sm font-medium text-gray-culture whitespace-nowrap w-36 overflow-hidden overflow-ellipsis">
+                  Author : David
+                  Bach</p>
+                <p class="text-base font-semibold">$2.70</p>
+              </div>
+              <div class="hover-content">
+              </div>
+              <p class="text-hover">Add to cart</p>
+            </div>
+            <!-- end card -->
+            <!-- start card -->
+            <div class="card col-span-6 md:col-span-3 lg:col-span-2">
+              <img class="w-1/2 mx-auto" src="./src/img/product/product1.png" alt="product1">
+              <hr class="bg-gray-culture my-6" />
+              <p class="text-gray-culture font-medium text-sm">Stock : 90</p>
+              <p
+                class="text-black font-bold text-base whitespace-nowrap w-20 2xl:w-48 overflow-hidden overflow-ellipsis">
+                Faktor
+                Lattes Lattes Lattes</p>
+              <p class="text-green-mantis text-xs my-3">Published at <span
+                  class="text-white bg-green-mantis rounded-lg p-2 ml-3">02/07/2021</span> </p>
+              <div class="mt-6 flex items-center justify-between">
+                <p
+                  class="text-sm font-medium text-gray-culture whitespace-nowrap w-36 overflow-hidden overflow-ellipsis">
+                  Author : David
+                  Bach</p>
+                <p class="text-base font-semibold">$2.70</p>
+              </div>
+              <div class="hover-content">
+              </div>
+              <p class="text-hover">Add to cart</p>
+            </div>
+            <!-- end card -->
+            <!-- start card -->
+            <div class="card col-span-6 md:col-span-3 lg:col-span-2">
+              <img class="w-1/2 mx-auto" src="./src/img/product/product1.png" alt="product1">
+              <hr class="bg-gray-culture my-6" />
+              <p class="text-gray-culture font-medium text-sm">Stock : 90</p>
+              <p
+                class="text-black font-bold text-base whitespace-nowrap w-20 2xl:w-48 overflow-hidden overflow-ellipsis">
+                Faktor
+                Lattes Lattes Lattes</p>
+              <p class="text-green-mantis text-xs my-3">Published at <span
+                  class="text-white bg-green-mantis rounded-lg p-2 ml-3">02/07/2021</span> </p>
+              <div class="mt-6 flex items-center justify-between">
+                <p
+                  class="text-sm font-medium text-gray-culture whitespace-nowrap w-36 overflow-hidden overflow-ellipsis">
+                  Author : David
+                  Bach</p>
+                <p class="text-base font-semibold">$2.70</p>
+              </div>
+              <div class="hover-content">
+              </div>
+              <p class="text-hover">Add to cart</p>
+            </div>
+            <!-- end card -->
+          </div>
+
+
+        </div>
+        <div
+          class="col-span-3 xl:col-span-1 pr-4 pl-0 xl:pl-9 sm:pr-9 relative h-auto xl:h-screen overflow-scroll py-9">
+          <div class="flex justify-between">
+            <p class="text-base font-bold">Codeathome <span class="font-normal">BookStore</span>
+            </p>
+
+            <button class="text-gray-culture text-base font-medium text-base">Clear All
+            </button>
+          </div>
+
+          <!-- empty oerder -->
+          <div class="flex items-center justify-center h-full">
+            <img src="./src/img/empty_order.png" alt="empty order" class="mb-20">
+          </div>
+          <!-- order list -->
+
+          <!-- btn bottom absolute -->
+          <div class="static mt-10 xl:mt-0 xl:absolute bottom-4 left-1/2 xl:transform xl:-translate-x-1/2 xl:w-11/12">
+            <div class="flex items-center justify-between rounded-lg bg-gray-culture p-4 bg-opacity-20">
+              <p>Total Payment </p>
+              <p> $ 0</p>
+            </div>
+            <div>
+              <button class="btn-violet flex items-center justify-center text-xl">
+                Checkout&nbsp;<span class="font-light">(0 Book)</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-
-      <p class="text-xl mt-10">Best Seller</p>
-      <!-- list card -->
-      <div class="grid grid-cols-2 gap-4 mt-9">
-        <div class="col-span-2 xl:col-span-1 shadow-1xl p-4 flex items-start relative">
-          <img src="./src//img/product/product1.png" alt="product1">
-          <div class="flex flex-col ml-6">
-            <p
-              class="font-bold text-xl text-violet-purple whitespace-nowrap w-24 sm:w-auto overflow-hidden overflow-ellipsis">
-              David Bach: Faktor Latte</p>
-            <p class="font-medium text-black">$2.70</p>
-            <p class="absolute bottom-4 font-medium text-green-mantis">452 Unit sold</p>
-            <p class="absolute top-4 right-4 text-white bg-orang bg-orange-pumkin px-3 py-1 rounded-lg">Top 1</p>
-          </div>
-
-        </div>
-        <div class="col-span-2 xl:col-span-1 shadow-1xl p-4 flex items-start relative">
-          <img src="./src//img/product/product2.png" alt="product2">
-          <div class="flex flex-col ml-6">
-            <p
-              class="font-bold text-xl text-violet-purple whitespace-nowrap w-24 sm:w-auto overflow-hidden overflow-ellipsis">
-              Salvation of a Saint</p>
-            <p class="font-medium text-black">$6.70</p>
-            <p class="absolute bottom-4 font-medium text-green-mantis">245 Unit sold</p>
-            <p class="absolute top-4 right-4 text-white bg-orang bg-orange-pumkin px-3 py-1 rounded-lg">Top 2</p>
-          </div>
-
-        </div>
-        <div class="col-span-2 xl:col-span-1 shadow-1xl p-4 flex items-start relative">
-          <img src="./src//img/product/product3.png" alt="product3">
-          <div class="flex flex-col ml-6">
-            <p
-              class="font-bold text-xl text-violet-purple whitespace-nowrap w-24 sm:w-auto overflow-hidden overflow-ellipsis">
-              David Bach: Faktor Latte</p>
-            <p class="font-medium text-black">$9.70</p>
-            <p class="absolute bottom-4 font-medium text-green-mantis">387 Unit sold</p>
-            <p class="absolute top-4 right-4 text-white bg-orang bg-orange-pumkin px-3 py-1 rounded-lg">Top 3</p>
-          </div>
-
-        </div>
-        <div class="col-span-2 xl:col-span-1 shadow-1xl p-4 flex items-start relative">
-          <img src="./src//img/product/product4.png" alt="product4">
-          <div class="flex flex-col ml-6">
-            <p
-              class="font-bold text-xl text-violet-purple whitespace-nowrap w-24 sm:w-auto overflow-hidden overflow-ellipsis">
-              David Bach: Faktor Latte</p>
-            <p class="font-medium text-black">$5.70</p>
-            <p class="absolute bottom-4 font-medium text-green-mantis">138 Unit sold</p>
-            <p class="absolute top-4 right-4 text-white bg-orang bg-orange-pumkin px-3 py-1 rounded-lg">Top 4</p>
-          </div>
-
-        </div>
-
-      </div>
-
     </div>
   </div>
 </body>

@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=425px, initial-scale=1.0" />
   <link href="./src/style.css" rel="stylesheet">
   <link href="./src/tailwind.css" rel="stylesheet">
-  <title>Dashboard</title>
+  <title>Empty Category management</title>
 </head>
 
 <body class="font-poppins">
-  <div class="m-auto relative h-screen">
+  <div class="m-auto relative h-screen overflow-scroll xl:overflow-hidden">
     <!-- sidebar -->
     <div class="fixed left-0 h-screen w-76 shadow-2xl px-7 py-9">
+
+
       <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg"
         class="text-gray-culture hover:text-violet-purple duration-300 cursor-pointer">
         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -96,72 +98,44 @@
       </svg>
 
     </div>
-    <div class="pl-24 pr-9 sm:pl-32 py-9">
+    <div class="pl-24 sm:pl-32">
       <!-- content -->
-      <p class="text-xl">Dashboard</p>
+      <div class="grid grid-cols-3">
+        <div class="col-span-3 xl:col-span-2 pr-4 sm:pr-9 py-9 border-r overflow-scroll h-auto xl:h-screen relative">
+          <p class="text-xl">Category Managment</p>
 
-      <!-- statistik -->
-      <div class="w-full">
-        <div class="grid grid-cols-7 gap-4 mt-4">
-          <div class="col-span-7 xl:col-span-4 h-72 shadow-1xl rounded-lg"></div>
-          <div class="col-span-7 xl:col-span-3 h-72 shadow-1xl rounded-lg"></div>
+          <div class="static xl:absolute xl:top-1/2 xl:left-1/2 xl:transform xl:-translate-y-1/2 xl:-translate-x-1/2 m-auto
+            mt-10 xl:mt-0">
+            <img class="m-auto" src="./src/img/empty_category.png" alt="empty_content">
+            <p class="text-violet-purple text-xl font-medium text-center">Category is Empty!</p>
+          </div>
+        </div>
+        <div
+          class="col-span-3 xl:col-span-1 pr-4 pl-0 xl:pl-9 sm:pr-9 relative h-auto xl:h-screen overflow-scroll py-9">
+          <div class="flex justify-between">
+            <p class="text-base font-bold">Codeathome <span class="font-normal">BookStore</span>
+            </p>
+          </div>
+
+          <div class="mt-8">
+            <input type="text" placeholder="Category name" class="input-field">
+          </div>
+
+          <!-- btn bottom absolute -->
+          <div class="static mt-10 xl:mt-0 xl:absolute bottom-4 left-1/2 xl:transform xl:-translate-x-1/2 xl:w-11/12">
+            <div>
+              <button class="btn-violet flex items-center justify-center text-xl">
+                Submit
+              </button>
+            </div>
+          </div>
+
+
+
+
+
         </div>
       </div>
-
-      <p class="text-xl mt-10">Best Seller</p>
-      <!-- list card -->
-      <div class="grid grid-cols-2 gap-4 mt-9">
-        <div class="col-span-2 xl:col-span-1 shadow-1xl p-4 flex items-start relative">
-          <img src="./src//img/product/product1.png" alt="product1">
-          <div class="flex flex-col ml-6">
-            <p
-              class="font-bold text-xl text-violet-purple whitespace-nowrap w-24 sm:w-auto overflow-hidden overflow-ellipsis">
-              David Bach: Faktor Latte</p>
-            <p class="font-medium text-black">$2.70</p>
-            <p class="absolute bottom-4 font-medium text-green-mantis">452 Unit sold</p>
-            <p class="absolute top-4 right-4 text-white bg-orang bg-orange-pumkin px-3 py-1 rounded-lg">Top 1</p>
-          </div>
-
-        </div>
-        <div class="col-span-2 xl:col-span-1 shadow-1xl p-4 flex items-start relative">
-          <img src="./src//img/product/product2.png" alt="product2">
-          <div class="flex flex-col ml-6">
-            <p
-              class="font-bold text-xl text-violet-purple whitespace-nowrap w-24 sm:w-auto overflow-hidden overflow-ellipsis">
-              Salvation of a Saint</p>
-            <p class="font-medium text-black">$6.70</p>
-            <p class="absolute bottom-4 font-medium text-green-mantis">245 Unit sold</p>
-            <p class="absolute top-4 right-4 text-white bg-orang bg-orange-pumkin px-3 py-1 rounded-lg">Top 2</p>
-          </div>
-
-        </div>
-        <div class="col-span-2 xl:col-span-1 shadow-1xl p-4 flex items-start relative">
-          <img src="./src//img/product/product3.png" alt="product3">
-          <div class="flex flex-col ml-6">
-            <p
-              class="font-bold text-xl text-violet-purple whitespace-nowrap w-24 sm:w-auto overflow-hidden overflow-ellipsis">
-              David Bach: Faktor Latte</p>
-            <p class="font-medium text-black">$9.70</p>
-            <p class="absolute bottom-4 font-medium text-green-mantis">387 Unit sold</p>
-            <p class="absolute top-4 right-4 text-white bg-orang bg-orange-pumkin px-3 py-1 rounded-lg">Top 3</p>
-          </div>
-
-        </div>
-        <div class="col-span-2 xl:col-span-1 shadow-1xl p-4 flex items-start relative">
-          <img src="./src//img/product/product4.png" alt="product4">
-          <div class="flex flex-col ml-6">
-            <p
-              class="font-bold text-xl text-violet-purple whitespace-nowrap w-24 sm:w-auto overflow-hidden overflow-ellipsis">
-              David Bach: Faktor Latte</p>
-            <p class="font-medium text-black">$5.70</p>
-            <p class="absolute bottom-4 font-medium text-green-mantis">138 Unit sold</p>
-            <p class="absolute top-4 right-4 text-white bg-orang bg-orange-pumkin px-3 py-1 rounded-lg">Top 4</p>
-          </div>
-
-        </div>
-
-      </div>
-
     </div>
   </div>
 </body>

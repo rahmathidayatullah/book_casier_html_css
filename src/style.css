@@ -5,19 +5,19 @@
 
 @layer components {
   .input-field {
-    @apply rounded-10 p-3 focus:outline-none border focus:border-violet-purple w-full shadow-1xl;
+    @apply rounded-10 p-3 focus:outline-none border border-white  focus:border-violet-purple w-full shadow-1xl;
   }
   .btn-violet {
     @apply px-6 py-4 bg-violet-purple text-white rounded-lg text-sm font-bold mt-6 w-full duration-300 hover:bg-soft-purple;
   }
   .items-list {
-    @apply pb-1.5 font-normal border-b-4 border-transparent hover:border-violet-purple hover:text-black hover:font-bold duration-300 cursor-pointer text-gray-culture;
+    @apply pb-1.5 font-normal border-b-4 border-transparent hover:border-violet-purple hover:text-black hover:font-bold duration-300 cursor-pointer text-gray-culture whitespace-nowrap;
   }
   .btn_circle{
     @apply rounded-full bg-violet-purple flex items-center justify-center text-white
   }
   .card{
-    @apply col-span-1 px-3 py-6 flex flex-col shadow-1xl rounded-lg cursor-pointer relative overflow-hidden
+    @apply px-3 py-6 flex flex-col shadow-1xl rounded-lg cursor-pointer relative overflow-hidden
   }
 }
 
@@ -55,5 +55,27 @@
   display: block;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ebebeb;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #dddddd;
+}
 
 
